@@ -1,7 +1,7 @@
 function playGame(){
 
     document.getElementById("hello-player").remove();
-    document.getElementById("grid").style.property = "display: block ";
+    document.getElementById("grid").style.property = "display:block";
 }
 
 
@@ -16,9 +16,6 @@ function playGame(){
 		const pcpaper = document.querySelector('.computer-choices .paperimg');
 		const pcscissors = document.querySelector('.computer-choices .scissorsimg');
 
-        // To show the move the Pc made.
-        const cMove = document.querySelector('.c-move');
-        const pMove = document.querySelector('.p-move');
 
 
         // To show the result each round.
@@ -85,8 +82,6 @@ function playGame(){
 				pcpaper.classList.add("clicked");
                 pcscore.appendChild(stars);
                 stars.textContent = "WIN!";
-                cMove.innerHTML = '<img src="img/paperimg">';
-                cMove.textContent = "Papier";
 				rounds += 1;
 			} else if(e.target === rock && computerChoice === "scissorsimg") {
 				rock.classList.add("clicked");

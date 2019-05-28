@@ -58,7 +58,6 @@ button#play:active {
         width: 80%;
         margin: 0 auto;
         margin-top: 15%;
-        
     }
 
 #the-game {
@@ -68,28 +67,65 @@ button#play:active {
 
     }
 
-
-.computer-choices {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-}
-
 .player-choices {
     text-align: right;
 }
 
 
 
-.player-choices {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-}
+
 
 #rounds {
     font-size: 60px;
     text-align: center;
     color: #e6b308;
+}
+
+.c-move {
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    float: right;
+}
+
+div#tie {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 100px;
+    font-family: serif;
+    color: #a0a09f;
+}
+
+
+div#pcscore {
+    font-size: 30px;
+    color: #9a9a9a;
+}
+div#plscore {
+    font-size: 30px;
+    color: #9a9a9a;
+}
+
+div#pcname {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #9c9393;
+    font-family: sans-serif;
+}
+div#plname {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #9c9393;
+    font-family: sans-serif;
+}
+
+div#pcpoints {
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+div#plpoints {
+    padding-bottom: 20px;
+    font-size: 40px;
 }
